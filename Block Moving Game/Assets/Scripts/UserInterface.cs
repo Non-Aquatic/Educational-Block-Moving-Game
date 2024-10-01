@@ -13,7 +13,7 @@ public class UserInterface : MonoBehaviour
 
     public GameObject pausePanel;
     public Button restartButton;
-    //public Button saveGameButton;
+    public Button levelSelectButton;
     public Button mainMenuButton;
     public Button exitGameButton;
     private bool isPaused = false;
@@ -25,7 +25,7 @@ public class UserInterface : MonoBehaviour
 
         pausePanel.SetActive(false);
         restartButton.onClick.AddListener(RestartLevel);
-        //saveGameButton.onClick.AddListener(SaveGame);
+        levelSelectButton.onClick.AddListener(ToLevelSelect);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
         exitGameButton.onClick.AddListener(ExitGame);
     }
@@ -65,9 +65,9 @@ public class UserInterface : MonoBehaviour
         SceneManager.LoadScene(level.text);
     }
 
-    void SaveGame()
+    void ToLevelSelect()
     {
-        //I'm not sure how we want to go about doing this so this is more for show atm.
+        Debug.Log("I added this because I wanted to match the GDD and since we don't have a level select scene yet, this does nothing currently. -Mahliq");
     }
 
     void ReturnToMenu()
