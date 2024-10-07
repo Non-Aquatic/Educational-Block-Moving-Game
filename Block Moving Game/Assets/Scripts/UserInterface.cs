@@ -6,12 +6,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+//using UnityEngine.UIElements;
 
 public class UserInterface : MonoBehaviour
 {
     public TMP_Text level;
 
     public GameObject pausePanel;
+    public GameObject dimming;
     public Button restartButton;
     public Button levelSelectButton;
     public Button mainMenuButton;
@@ -24,6 +26,7 @@ public class UserInterface : MonoBehaviour
         level.text = SceneManager.GetActiveScene().name;
 
         pausePanel.SetActive(false);
+        dimming.SetActive(false);
         restartButton.onClick.AddListener(RestartLevel);
         levelSelectButton.onClick.AddListener(ToLevelSelect);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
@@ -49,6 +52,7 @@ public class UserInterface : MonoBehaviour
     void PauseGame()
     {
         pausePanel.SetActive(true);
+        dimming.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -56,6 +60,7 @@ public class UserInterface : MonoBehaviour
     void ResumeGame()
     {
         pausePanel.SetActive(false);
+        dimming.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
     }
@@ -67,7 +72,7 @@ public class UserInterface : MonoBehaviour
 
     void ToLevelSelect()
     {
-        Debug.Log("I added this because I wanted to match the GDD and since we don't have a level select scene yet, this does nothing currently. -Mahliq");
+        SceneManager.LoadScene("Level Select");
     }
 
     void ReturnToMenu()
