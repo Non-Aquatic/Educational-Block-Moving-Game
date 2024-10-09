@@ -491,3 +491,5 @@ MonoBehaviour:
   checkDown: {fileID: 677097036835667288}
   checkLeft: {fileID: 4369478000995730100}
   checkRight: {fileID: 5738103160681411716}
+  canMoveVertically: 0
+  canMoveHorizontally: 1
