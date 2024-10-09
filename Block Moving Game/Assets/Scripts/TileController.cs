@@ -7,18 +7,27 @@ public class TileController : MonoBehaviour
     public Transform checkLeft;
     public Transform checkRight;
 
+    // New variable to determine movement direction
+    public bool canMoveVertically = true; // Allow vertical movement by default
+    public bool canMoveHorizontally = false; // Allow horizontal movement by default
+
     public void Start()
     {
         SetCheckPositionsActive(false);
     }
+
     public void MoveTile(Vector2 direction)
     {
-        Vector3 newPosition = transform.position + (Vector3)direction; 
-        transform.position = newPosition; 
+        Vector3 newPosition = transform.position + (Vector3)direction;
+        transform.position = newPosition;
     }
 
     public bool CanMove(Vector2 direction)
     {
+        // Allow movement checks based on allowed direction
+        if ((direction == Vector2.up || direction == Vector2.down) && !canMoveVertically) return false;
+        if ((direction == Vector2.left || direction == Vector2.right) && !canMoveHorizontally) return false;
+
         Transform checkPosition = null;
         if (direction == Vector2.up) checkPosition = checkUp;
         else if (direction == Vector2.down) checkPosition = checkDown;
@@ -35,13 +44,13 @@ public class TileController : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag("Tile") && hit.gameObject != gameObject) 
+            if (hit.CompareTag("Tile") && hit.gameObject != gameObject)
             {
-                return false; 
+                return false;
             }
         }
 
-        return true; 
+        return true;
     }
 
     private void SetCheckPositionsActive(bool isActive)
