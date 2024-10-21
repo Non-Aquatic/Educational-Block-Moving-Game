@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
     private TileController selectedTile;
     private Vector2 touchStartPos;
     private Vector2 touchEndPos;
+    public AudioSource moveSound;
 
     void Update()
     {
@@ -43,10 +44,12 @@ public class GameManager : MonoBehaviour
             if (swipeDelta.x > 0 && selectedTile.CanMove(Vector2.right))
             {
                 selectedTile.MoveTile(Vector2.right);
+                moveSound.Play();
             }
             else if (swipeDelta.x < 0 && selectedTile.CanMove(Vector2.left))
             {
                 selectedTile.MoveTile(Vector2.left);
+                moveSound.Play();
             }
         }
         else
@@ -54,10 +57,12 @@ public class GameManager : MonoBehaviour
             if (swipeDelta.y > 0 && selectedTile.CanMove(Vector2.up))
             {
                 selectedTile.MoveTile(Vector2.up);
+                moveSound.Play();
             }
             else if (swipeDelta.y < 0 && selectedTile.CanMove(Vector2.down))
             {
                 selectedTile.MoveTile(Vector2.down);
+                moveSound.Play();
             }
         }
     }
