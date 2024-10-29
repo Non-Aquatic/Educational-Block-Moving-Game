@@ -1,0 +1,1614 @@
+fileFormatVersion: 2
+guid: 2a087a66248d3e740b5944522acbdb2a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blood_Flow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3707
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0071959d5152801419977c92bfc11fb3
+      internalID: -1799946245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3707
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24648bb25f6b70545b310aadf94a45a5
+      internalID: 167827777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3707
+        width: 600
+        height: 337
+      alignment: 9
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1f13cf276da214a9943f690a6a79e2
+      internalID: -1729587390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3707
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122666dc137426945a07e98b7caf0c29
+      internalID: 1769433714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3707
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cfc063a44666741ad7d4d6a2395a42
+      internalID: -237767540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3707
+        width: 599
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b4ba8936574fc4c9f04ff689636864
+      internalID: -554518118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3370
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73869c9f741a40441a31bbfe4e97fcbe
+      internalID: 1743781501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3370
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad0e157c41f2334eba99d68c419a679
+      internalID: 266066549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3370
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d90f1738bd40a479045dc9b76af409
+      internalID: -611374635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3370
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da2129f795940a459cd06ed9b63790f
+      internalID: 1527521539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3370
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f525b1aba75fe4d8d32dc471c9bbb3
+      internalID: -739340971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3370
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f1dc94e7fa57945898a8e0c0da2c83
+      internalID: -1911190392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3033
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fe9b126ca0c544d822d08165aee883
+      internalID: 1932361759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3033
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846364029c5b543438987abab15946fd
+      internalID: -233662195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3033
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff090699e1ba20045a3b465cc0ded73b
+      internalID: -770047568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3033
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8300502652d7ce4c93a8f66eaa2d4fb
+      internalID: 659071851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_16
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3033
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e925bff1116bf4347b06871463fe0af8
+      internalID: -975287206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_17
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3033
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77aaab68d91114541a315a2b02dcbb20
+      internalID: 172814099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2696
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d1f81a1c1372d4893927cee8486bd9
+      internalID: -1731843157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_19
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2696
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a99a18271e3874c98e23a64cc207a9
+      internalID: 1354281089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_20
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2696
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597cc552bfee08f488c31e9197e732fe
+      internalID: 1570097179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2696
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff462e8f0188b94c916077a2ffbfa0b
+      internalID: 1293668625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2696
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3964129840da61c48bfbf05e0586415e
+      internalID: -1273502861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_23
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2696
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db1702792ce6f846ad12af1bbe28e86
+      internalID: -1812359332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2359
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779e724542322c248b9cae5e92fcb461
+      internalID: -655703882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2359
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1651c2bbb7eb6a488967bec901ca78a
+      internalID: -1054301426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_26
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2359
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095086f753fdd5c458e979092cf2d25a
+      internalID: 43170582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_27
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2359
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8274c56ba28bdc84a8774d263e6a235e
+      internalID: 1371737747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_28
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2359
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ff7aa63d19fac4bb92ff4d2af6ba96
+      internalID: 1446235682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2359
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2ae32e6ee36fe48827f81004733c02
+      internalID: -1259876648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2022
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6548cfc6577a5a458cb4ad8432e6ac2
+      internalID: -635315376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2022
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4841875575b212548a892f3f18088bd1
+      internalID: -86938910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2022
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc11cb235023db74e9dd03b5a04b5ee1
+      internalID: -1454911846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2022
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38138778f984a2643b1f86571a4acac5
+      internalID: 391466190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2022
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04585881fe107ba4aaf8b11bbd3edb57
+      internalID: 1393609070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_35
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2022
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f4f5043225cc04cbd55c5b59340c79
+      internalID: 220080171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1685
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbe7c178b9ce3846b8da01f223be5ad
+      internalID: -1353800868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1685
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f455c67782f36b24eab4c570466d0657
+      internalID: 1807278185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_38
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1685
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935546bc1f9949d4d832bf212dfc5b49
+      internalID: -428981209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_39
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1685
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e1200e69c0ae34a8160d87dbb75aa2
+      internalID: 88334795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1685
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bffab4ef1cc7ee47a2543b0a63019dd
+      internalID: 2147104251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_41
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1685
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e615e64aa29d747adf49e75fa852f9
+      internalID: -1569859542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1348
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d18cd96ecb985d4a8625b23817eb133
+      internalID: -642817383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1348
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4c492aa8b223e46be1293a1247a582
+      internalID: -1801870354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1348
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8065133ea9f8c04abbd48680222fd99
+      internalID: -742981193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1348
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8146d414f9666e446ad2516d32cd8b31
+      internalID: 253850650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1348
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58d767e8af35014aa7ca51d59aac711
+      internalID: 1494588958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_47
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1348
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436ae0e037daa4b488bbe15e2a435541
+      internalID: -439457883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1011
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927879de5b836554e8fe1cae748a5769
+      internalID: 1561154321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_49
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1011
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debf3c643eabf1c4fa4419895d1426ca
+      internalID: -1838843844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_50
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1011
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8afe2a990871594fa9fccb2eaa4a532
+      internalID: 1652234894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_51
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1011
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8014d0601170ec4bbbe26e5680d2038
+      internalID: 664224154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_52
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1011
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3469829e0fcf1b941b275734d33e3a44
+      internalID: 159840623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_53
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1011
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a879e379f6e35446bb4718654f05846
+      internalID: -285963761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cb1f95b2ada08478133a905316d8e3
+      internalID: 831787924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_55
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 674
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1afebbe2b851274890576c16291c62a
+      internalID: 868120766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_56
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 674
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b53ef09e1d719c4f9d0ccce2b7428bd
+      internalID: -960805180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_57
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 674
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d9e96a6de17094b9bb5cf272f8c2e3
+      internalID: 1768618310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_58
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 674
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f546c6a44efbca04eb5e9a877f624031
+      internalID: -181217914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_59
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 674
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3b0875fd741754fb58d300c6a9baf3
+      internalID: -767957988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 337
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b39ded2fc00cc04999a7f4a593a7dae
+      internalID: -1466790753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 337
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7130a934fd5b2864fa3f7ab2f25a591d
+      internalID: 2060443744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 337
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cea70bc859d32749a9d3905706154c4
+      internalID: -721429135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_63
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 337
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eea90e850e31634e81d8d4222fca4c0
+      internalID: 660094384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_64
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 337
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55af75aac45cc7e44b832452a0bb177f
+      internalID: 1316005859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_65
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 337
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eab2a725104aaf459c2792affec0264
+      internalID: 1440081259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood_Flow_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e73b66ffe516f740bbc9de7e698c5c6
+      internalID: 473141153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Blood_Flow_0: -1799946245
+      Blood_Flow_1: 167827777
+      Blood_Flow_10: -739340971
+      Blood_Flow_11: -1911190392
+      Blood_Flow_12: 1932361759
+      Blood_Flow_13: -233662195
+      Blood_Flow_14: -770047568
+      Blood_Flow_15: 659071851
+      Blood_Flow_16: -975287206
+      Blood_Flow_17: 172814099
+      Blood_Flow_18: -1731843157
+      Blood_Flow_19: 1354281089
+      Blood_Flow_2: -1729587390
+      Blood_Flow_20: 1570097179
+      Blood_Flow_21: 1293668625
+      Blood_Flow_22: -1273502861
+      Blood_Flow_23: -1812359332
+      Blood_Flow_24: -655703882
+      Blood_Flow_25: -1054301426
+      Blood_Flow_26: 43170582
+      Blood_Flow_27: 1371737747
+      Blood_Flow_28: 1446235682
+      Blood_Flow_29: -1259876648
+      Blood_Flow_3: 1769433714
+      Blood_Flow_30: -635315376
+      Blood_Flow_31: -86938910
+      Blood_Flow_32: -1454911846
+      Blood_Flow_33: 391466190
+      Blood_Flow_34: 1393609070
+      Blood_Flow_35: 220080171
+      Blood_Flow_36: -1353800868
+      Blood_Flow_37: 1807278185
+      Blood_Flow_38: -428981209
+      Blood_Flow_39: 88334795
+      Blood_Flow_4: -237767540
+      Blood_Flow_40: 2147104251
+      Blood_Flow_41: -1569859542
+      Blood_Flow_42: -642817383
+      Blood_Flow_43: -1801870354
+      Blood_Flow_44: -742981193
+      Blood_Flow_45: 253850650
+      Blood_Flow_46: 1494588958
+      Blood_Flow_47: -439457883
+      Blood_Flow_48: 1561154321
+      Blood_Flow_49: -1838843844
+      Blood_Flow_5: -554518118
+      Blood_Flow_50: 1652234894
+      Blood_Flow_51: 664224154
+      Blood_Flow_52: 159840623
+      Blood_Flow_53: -285963761
+      Blood_Flow_54: 831787924
+      Blood_Flow_55: 868120766
+      Blood_Flow_56: -960805180
+      Blood_Flow_57: 1768618310
+      Blood_Flow_58: -181217914
+      Blood_Flow_59: -767957988
+      Blood_Flow_6: 1743781501
+      Blood_Flow_60: -1466790753
+      Blood_Flow_61: 2060443744
+      Blood_Flow_62: -721429135
+      Blood_Flow_63: 660094384
+      Blood_Flow_64: 1316005859
+      Blood_Flow_65: 1440081259
+      Blood_Flow_66: 473141153
+      Blood_Flow_7: 266066549
+      Blood_Flow_8: -611374635
+      Blood_Flow_9: 1527521539
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
