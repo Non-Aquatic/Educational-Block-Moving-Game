@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGameTile : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class EndGameTile : MonoBehaviour
     public Transform checkRight;
 
     private TileController tileController;
+    private string sceneName = "";
 
     void Start()
     {
@@ -45,5 +47,14 @@ public class EndGameTile : MonoBehaviour
     private void EndGame()
     {
         Debug.Log("Game Over! The tile has reached the End area.");
+        CheckScene();
+        SceneManager.LoadScene("Fact Screen");
+    }
+
+    void CheckScene()
+    {
+        sceneName = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("lastSceneName", sceneName);
+        PlayerPrefs.Save();
     }
 }

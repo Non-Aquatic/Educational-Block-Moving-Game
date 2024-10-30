@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
-    public Button tutorialButton;
     public Button l1Button;
     public Button l2Button;
+    public Button l3Button;
     public Button mainMenuButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        tutorialButton.onClick.AddListener(GoToTutorial);
+        l3Button.onClick.AddListener(GoToL3);
         l1Button.onClick.AddListener(GoToL1);
         l2Button.onClick.AddListener(GoToL2);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
@@ -26,9 +26,9 @@ public class LevelSelect : MonoBehaviour
         
     }
 
-    void GoToTutorial()
+    void GoToL3()
     {
-        Debug.Log("This does nothing until we add the Tutorial Level");
+        SceneManager.LoadScene("Level 3");
     }
 
     void GoToL1()
