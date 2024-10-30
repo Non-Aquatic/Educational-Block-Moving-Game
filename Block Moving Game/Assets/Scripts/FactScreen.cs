@@ -22,8 +22,8 @@ public class FactScreen : MonoBehaviour
                    "the protein in red blood cells that caries oxygen. This mutation causes red blood cells to form a rigid, sickle-like shape that can ause various complications.";
         facts[1] = "Sickled red blood cells are less flexible, which can can lead to small blood vessels becoming blocked. This causes severe pain in episodes known as \"sickle cell crises.\"" +
                    " Other complications include increased risk of infections, organ damage, and anemia.";
-        facts[2] = "Sickle cell disease is particularly common among people of African, Mediterranean, Middle Eastern, and Indian ancestry. It’s estimated to affect about 100,000 Americans and " +
-                   "millions worldwide, especially in regions where malaria is or was common, as carriers of the trait have some protection against malaria.";
+        facts[2] = "Sickle cell disease is particularly common among people of African. Itï¿½s estimated to affect about 100,000 Americans and " +
+                   "8 million worldwide, especially in regions where malaria is or was common, as carriers of the trait have some protection against malaria.";
         facts[3] = "Traditional treatments focus on managing symptoms, such as pain relief, blood transfusions, and medications like hydroxyurea. Bone marrow transplants offer a potential cure but " +
                    "are not accessible or safe for everyone due to matching and health constraints.";
         facts[4] = "In 2023, a new gene therapy called exa-cel was developed by CRISPR Therapeutics and Vertex Pharaceuticals and received regulatory approval insome regions. This therapy uses CRISPR" +
