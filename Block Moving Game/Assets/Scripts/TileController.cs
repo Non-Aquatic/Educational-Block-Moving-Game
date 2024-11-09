@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using System.Collections;
 
 public class TileController : MonoBehaviour
 {
@@ -19,9 +21,21 @@ public class TileController : MonoBehaviour
     public void MoveTile(Vector2 direction)
     {
         Vector3 newPosition = transform.position + (Vector3)direction;
-        transform.position = newPosition;
+        StartCoroutine(SmoothMoveToPosition(newPosition));
     }
+    private IEnumerator SmoothMoveToPosition(Vector3 targetPosition)
+    {
+        float timeElapsed = 0f;
+        Vector3 startingPosition = transform.position;
 
+        while (timeElapsed < .1)
+        {
+            transform.position = Vector3.Lerp(startingPosition, targetPosition, timeElapsed / .1f);
+            timeElapsed += Time.deltaTime;
+            yield return null; 
+        }
+        transform.position = targetPosition;
+    }
     public bool CanMove(Vector2 direction)
     {
         // Allow movement checks based on allowed direction
