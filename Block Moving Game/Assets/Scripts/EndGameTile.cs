@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement; // Required for scene management
 
 public class EndGameTile : MonoBehaviour
 {
@@ -8,8 +8,7 @@ public class EndGameTile : MonoBehaviour
     public Transform checkLeft;
     public Transform checkRight;
 
-    private TileController tileController;
-    private string sceneName = "";
+    private TileController tileController; // Reference to the TileController
 
     void Start()
     {
@@ -18,11 +17,13 @@ public class EndGameTile : MonoBehaviour
 
     void Update()
     {
+        // Check for end game condition at all check positions
         CheckForEndGame();
     }
 
     private void CheckForEndGame()
     {
+        // Check for "End" collider at all check positions
         if (CheckForEnd(checkUp) || CheckForEnd(checkDown) || CheckForEnd(checkLeft) || CheckForEnd(checkRight))
         {
             EndGame();
@@ -46,15 +47,13 @@ public class EndGameTile : MonoBehaviour
 
     private void EndGame()
     {
+        // Code to end the game (e.g., load a game over scene or display a message)
         Debug.Log("Game Over! The tile has reached the End area.");
-        CheckScene();
-        SceneManager.LoadScene("Fact Screen");
-    }
 
-    void CheckScene()
-    {
-        sceneName = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetString("lastSceneName", sceneName);
-        PlayerPrefs.Save();
+        // Optionally load a new scene
+        // SceneManager.LoadScene("GameOverScene"); // Uncomment to load a new scene
+
+        // Alternatively, you could just stop the game
+        // Time.timeScale = 0; // Pause the game
     }
 }
