@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -67,6 +67,7 @@ public class UserInterface : MonoBehaviour
 
     void RestartLevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(level.text);
     }
 
