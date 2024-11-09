@@ -28,7 +28,7 @@ public class LevelSelect : MonoBehaviour
 
     void GoToL3()
     {
-        //SceneManager.LoadScene("Level 3");
+        SceneManager.LoadScene("Level 3");
     }
 
     void GoToL1()
@@ -38,7 +38,7 @@ public class LevelSelect : MonoBehaviour
 
     void GoToL2()
     {
-        //SceneManager.LoadScene("Level 2");
+        SceneManager.LoadScene("Level 2");
     }
 
     void ReturnToMenu()
