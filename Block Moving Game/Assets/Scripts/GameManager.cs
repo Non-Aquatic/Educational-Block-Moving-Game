@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
             selectedTile = hit.collider.GetComponent<TileController>();
         }
     }
-
+    
     private void DetectSwipe()
     {
         Vector2 swipeDelta = touchEndPos - touchStartPos;
