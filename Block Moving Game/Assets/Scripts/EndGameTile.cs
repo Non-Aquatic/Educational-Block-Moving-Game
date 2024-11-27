@@ -7,6 +7,7 @@ public class EndGameTile : MonoBehaviour
     public Transform checkDown;
     public Transform checkLeft;
     public Transform checkRight;
+    public Transform endGameTile;
 
     private TileController tileController;
     private string sceneName = "";
@@ -23,7 +24,11 @@ public class EndGameTile : MonoBehaviour
 
     private void CheckForEndGame()
     {
-        if (CheckForEnd(checkUp) || CheckForEnd(checkDown) || CheckForEnd(checkLeft) || CheckForEnd(checkRight))
+      /*  if (CheckForEnd(checkUp) || CheckForEnd(checkDown) || CheckForEnd(checkLeft) || CheckForEnd(checkRight))
+        {
+            EndGame();
+        }*/
+        if (CheckForEnd(endGameTile))
         {
             EndGame();
         }
