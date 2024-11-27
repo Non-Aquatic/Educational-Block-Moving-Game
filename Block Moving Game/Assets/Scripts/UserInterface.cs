@@ -14,6 +14,7 @@ public class UserInterface : MonoBehaviour
 
     public GameObject pausePanel;
     public GameObject dimming;
+    public GameObject holeFiller;
     public Button restartButton;
     public Button levelSelectButton;
     public Button mainMenuButton;
@@ -27,6 +28,7 @@ public class UserInterface : MonoBehaviour
 
         pausePanel.SetActive(false);
         dimming.SetActive(false);
+        holeFiller.SetActive(false);
         restartButton.onClick.AddListener(RestartLevel);
         levelSelectButton.onClick.AddListener(ToLevelSelect);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
@@ -53,6 +55,7 @@ public class UserInterface : MonoBehaviour
     {
         pausePanel.SetActive(true);
         dimming.SetActive(true);
+        holeFiller.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -61,6 +64,7 @@ public class UserInterface : MonoBehaviour
     {
         pausePanel.SetActive(false);
         dimming.SetActive(false);
+        holeFiller.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
     }
