@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &13533500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 105189971452992829, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
+  m_PrefabInstance: {fileID: 4081645282381434509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71255454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2035,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSound: {fileID: 1692420875}
+  movesObject: {fileID: 2065806274}
+  dimming: {fileID: 13533500}
+  moveLimit: 15
+  movesText: {fileID: 4081645282381434511}
 --- !u!82 &1692420875
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2353,6 +2362,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6223658194852016662, guid: 5a04464fce444ef459f4c66c77ee0589, type: 3}
   m_PrefabInstance: {fileID: 1057413926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2065806274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9061917098054570753, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
+  m_PrefabInstance: {fileID: 4081645282381434509}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2096373402 stripped
 Transform:
@@ -2802,6 +2816,17 @@ PrefabInstance:
 --- !u!114 &4081645282381434510 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3396654056752375392, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
+  m_PrefabInstance: {fileID: 4081645282381434509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4081645282381434511 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6145784527513188860, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
   m_PrefabInstance: {fileID: 4081645282381434509}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
