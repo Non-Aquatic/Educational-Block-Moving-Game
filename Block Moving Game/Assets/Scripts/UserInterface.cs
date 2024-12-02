@@ -19,6 +19,8 @@ public class UserInterface : MonoBehaviour
     public Button levelSelectButton;
     public Button mainMenuButton;
     public Button exitGameButton;
+    public Button retryButton;
+    public Button returnToSelectButton;
     private bool isPaused = false;
 
     // Start is called before the first frame update
@@ -30,7 +32,9 @@ public class UserInterface : MonoBehaviour
         dimming.SetActive(false);
         holeFiller.SetActive(false);
         restartButton.onClick.AddListener(RestartLevel);
+        retryButton.onClick.AddListener(RestartLevel);
         levelSelectButton.onClick.AddListener(ToLevelSelect);
+        returnToSelectButton.onClick.AddListener(ToLevelSelect);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
         exitGameButton.onClick.AddListener(ExitGame);
     }
