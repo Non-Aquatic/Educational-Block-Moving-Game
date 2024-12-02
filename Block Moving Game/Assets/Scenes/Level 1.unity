@@ -2080,7 +2080,7 @@ MonoBehaviour:
   moveSound: {fileID: 1692420875}
   movesObject: {fileID: 2065806274}
   dimming: {fileID: 13533500}
-  moveLimit: 15
+  moveLimit: 17
   movesText: {fileID: 4081645282381434511}
 --- !u!82 &1692420875
 AudioSource:
