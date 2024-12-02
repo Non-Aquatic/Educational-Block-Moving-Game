@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
         {
             touchEndPos = Input.mousePosition;
             DetectSwipe();
+            selectedTile.DeactivateArrows();
             selectedTile = null;
         }
 
@@ -51,6 +52,10 @@ public class GameManager : MonoBehaviour
         if (hit.collider != null && hit.collider.CompareTag("Tile"))
         {
             selectedTile = hit.collider.GetComponent<TileController>();
+            if (selectedTile != null)
+            {
+                selectedTile.ActivateArrows();
+            }
         }
     }
     

@@ -16,6 +16,7 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
         tutorialText.text = "Welcome to the game! Your goal is to move the red blood cell here.";
+        DeactivateAllArrows();
         SetArrow(0);
     }
 
@@ -65,7 +66,7 @@ public class TutorialManager : MonoBehaviour
                 timer = 7f;
                 break;
             case 4:
-                tutorialText.text = "All cells can move either only horizontally or only vertically, unless they are made not sticky and can not move on top of other cells";
+                tutorialText.text = "All cells can move either only horizontally or only vertically and can not move on top of other cells";
                 timer = 7f;
                 break;
             case 5:
@@ -74,7 +75,7 @@ public class TutorialManager : MonoBehaviour
                 timer = 7f;
                 break;
             case 6:
-                tutorialText.text = "In the top right here you can also see the amount of time left and amount of moves you have taken";
+                tutorialText.text = "In the top right here you can also see the amount of time left and amount of moves you have left";
                 SetArrow(5);
                 timer = 7f;
                 break;

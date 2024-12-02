@@ -25,6 +25,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2447569029578141519, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+      propertyPath: arrowUp
+      value: 
+      objectReference: {fileID: 5905712162111213324}
+    - target: {fileID: 2447569029578141519, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+      propertyPath: arrowDown
+      value: 
+      objectReference: {fileID: 6457274941242050172}
+    - target: {fileID: 2447569029578141519, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+      propertyPath: arrowLeft
+      value: 
+      objectReference: {fileID: 5510183232309149253}
+    - target: {fileID: 2447569029578141519, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+      propertyPath: arrowRight
+      value: 
+      objectReference: {fileID: 5805205466747815843}
+    - target: {fileID: 2447569029578141519, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
       propertyPath: canMoveVertically
       value: 0
       objectReference: {fileID: 0}
@@ -97,3 +113,23 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+--- !u!1 &5510183232309149253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4336459688465875560, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+  m_PrefabInstance: {fileID: 8094702910402133037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5805205466747815843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2361595900452551566, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+  m_PrefabInstance: {fileID: 8094702910402133037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5905712162111213324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2423891538804290337, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+  m_PrefabInstance: {fileID: 8094702910402133037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6457274941242050172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3011483389817879121, guid: b1d5b68829e54fa4d8aeff058deb832b, type: 3}
+  m_PrefabInstance: {fileID: 8094702910402133037}
+  m_PrefabAsset: {fileID: 0}

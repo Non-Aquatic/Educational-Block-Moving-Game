@@ -1,14 +1,18 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     // Time limit for the level
     public float timeLimit = 300f;  // Default 5 minutes
-    private float timeRemaining;
+    public float timeRemaining;
     private bool isTimerRunning = true;
-
+    public GameObject timesObject;
+    public GameObject dimming;
+    public Button restartButton;
+    public Button levelSelectButton;
     // Event that can be hooked up to UI or other systems
     public delegate void TimerEvent();
     public static event TimerEvent OnTimeUp;
@@ -17,6 +21,10 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+        timesObject.SetActive(false);
+        dimming.SetActive(false);
+        restartButton.onClick.AddListener(RestartLevel);
+        levelSelectButton.onClick.AddListener(ToLevelSelect);
         timeRemaining = timeLimit;  
     }
 
@@ -46,7 +54,9 @@ public class Timer : MonoBehaviour
         // Load a fail scene, restart the level, or end game
         Debug.Log("Time's up! You lost!");
         // Example: Load the current scene again (level fail scenario)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);  // Restart current level
+        timesObject.SetActive(true);
+        dimming.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public float GetTimeRemaining()
@@ -62,6 +72,16 @@ public class Timer : MonoBehaviour
     }
     public void AddTime(float extraTime)
     {
-        timeRemaining += extraTime;  // Add extra time
+        timeRemaining += extraTime;  
+    }
+    void RestartLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void ToLevelSelect()
+    {
+        SceneManager.LoadScene("Level Select");
     }
 }

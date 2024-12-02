@@ -9,6 +9,11 @@ public class TileController : MonoBehaviour
     public Transform checkLeft;
     public Transform checkRight;
 
+    public GameObject arrowUp;
+    public GameObject arrowDown;
+    public GameObject arrowLeft;
+    public GameObject arrowRight;
+
     // New variable to determine movement direction
     public bool canMoveVertically = true; // Allow vertical movement by default
     public bool canMoveHorizontally = false; // Allow horizontal movement by default
@@ -16,6 +21,7 @@ public class TileController : MonoBehaviour
     public void Start()
     {
         SetCheckPositionsActive(false);
+        DeactivateArrows();
     }
 
     public void MoveTile(Vector2 direction)
@@ -73,5 +79,21 @@ public class TileController : MonoBehaviour
         checkDown.gameObject.SetActive(isActive);
         checkLeft.gameObject.SetActive(isActive);
         checkRight.gameObject.SetActive(isActive);
+    }
+    public void ActivateArrows()
+    {
+        if (CanMove(Vector2.up)) arrowUp.SetActive(true);
+        if (CanMove(Vector2.down)) arrowDown.SetActive(true);
+        if (CanMove(Vector2.left)) arrowLeft.SetActive(true);
+        if (CanMove(Vector2.right)) arrowRight.SetActive(true);
+    }
+
+    // Method to deactivate all arrows
+    public void DeactivateArrows()
+    {
+        arrowUp.SetActive(false);
+        arrowDown.SetActive(false);
+        arrowLeft.SetActive(false);
+        arrowRight.SetActive(false);
     }
 }
