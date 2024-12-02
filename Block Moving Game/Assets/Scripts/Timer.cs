@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,18 +13,19 @@ public class Timer : MonoBehaviour
     public delegate void TimerEvent();
     public static event TimerEvent OnTimeUp;
 
+    public TextMeshProUGUI timeDisplay;
+
     void Start()
     {
-        timeRemaining = timeLimit;  // Set the timer to the initial time limit
+        timeRemaining = timeLimit;  
     }
 
     void Update()
     {
         if (isTimerRunning)
         {
-            timeRemaining -= Time.deltaTime;  // Decrease the timer
-
-            // Check if time is up
+            timeRemaining -= Time.deltaTime;
+            timeDisplay.text = Mathf.Ceil(timeRemaining).ToString() + "s left";
             if (timeRemaining <= 0)
             {
                 timeRemaining = 0;
@@ -57,5 +59,9 @@ public class Timer : MonoBehaviour
     {
         timeRemaining = timeLimit;
         isTimerRunning = true;
+    }
+    public void AddTime(float extraTime)
+    {
+        timeRemaining += extraTime;  // Add extra time
     }
 }

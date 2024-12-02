@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private TileController selectedTile;
+    public TileController selectedTile;
     private Vector2 touchStartPos;
     private Vector2 touchEndPos;
     public AudioSource moveSound;
