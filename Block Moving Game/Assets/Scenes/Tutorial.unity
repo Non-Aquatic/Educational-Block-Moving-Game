@@ -450,11 +450,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8938084598989623892, guid: 5a04464fce444ef459f4c66c77ee0589, type: 3}
   m_PrefabInstance: {fileID: 999631187}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &223187835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3589006567038405111, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
-  m_PrefabInstance: {fileID: 4081645282381434509}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &241490100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +1784,11 @@ MonoBehaviour:
   checkLeft: {fileID: 1915147025}
   checkRight: {fileID: 605699770}
   endGameTile: {fileID: 999631188}
+  timer: {fileID: 0}
+  gameManager: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &1269473145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2369,7 @@ PrefabInstance:
     - target: {fileID: 823342953359848739, guid: 7c62ad35359e7be45a35ccc2018f8f4c, type: 3}
       propertyPath: timer
       value: 
-      objectReference: {fileID: 4081645282381434513}
+      objectReference: {fileID: 0}
     - target: {fileID: 823342953359848739, guid: 7c62ad35359e7be45a35ccc2018f8f4c, type: 3}
       propertyPath: ambulance
       value: 
@@ -3483,6 +3483,10 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4818329207707157673, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
+      propertyPath: timeLimit
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6911890598472847478, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3581,36 +3585,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6911890598472847478, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 990600922}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3589006567038405111, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4081645282381434513}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
 --- !u!114 &4081645282381434510 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3396654056752375392, guid: 36275f157e2e7be40addc9f918a4339a, type: 3}
   m_PrefabInstance: {fileID: 4081645282381434509}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223187835}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4081645282381434513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223187835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9f7f7ae62924ca458a81d58e179c25c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeLimit: 300
-  timeDisplay: {fileID: 4081645282381434510}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
