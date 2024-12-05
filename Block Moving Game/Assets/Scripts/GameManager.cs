@@ -1,10 +1,25 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private TileController selectedTile;
+    public TileController selectedTile;
     private Vector2 touchStartPos;
     private Vector2 touchEndPos;
+    public AudioSource moveSound;
+
+    public GameObject movesObject;
+    public GameObject dimming;
+    public int moveLimit;
+    public TMP_Text movesText;
+
+    private void Start()
+    {
+        movesObject.SetActive(false);
+        dimming.SetActive(false);
+        movesText.text = "Moves: " + moveLimit.ToString();
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
@@ -18,7 +33,14 @@ public class GameManager : MonoBehaviour
         {
             touchEndPos = Input.mousePosition;
             DetectSwipe();
+            selectedTile.DeactivateArrows();
             selectedTile = null;
+        }
+
+        movesText.text = "Moves: " + moveLimit.ToString();
+        if (moveLimit == 0)
+        {
+            EnableOOM();
         }
     }
 
@@ -30,9 +52,13 @@ public class GameManager : MonoBehaviour
         if (hit.collider != null && hit.collider.CompareTag("Tile"))
         {
             selectedTile = hit.collider.GetComponent<TileController>();
+            if (selectedTile != null)
+            {
+                selectedTile.ActivateArrows();
+            }
         }
     }
-
+    
     private void DetectSwipe()
     {
         Vector2 swipeDelta = touchEndPos - touchStartPos;
@@ -43,10 +69,14 @@ public class GameManager : MonoBehaviour
             if (swipeDelta.x > 0 && selectedTile.CanMove(Vector2.right))
             {
                 selectedTile.MoveTile(Vector2.right);
+                moveSound.Play();
+                moveLimit -= 1;
             }
             else if (swipeDelta.x < 0 && selectedTile.CanMove(Vector2.left))
             {
                 selectedTile.MoveTile(Vector2.left);
+                moveSound.Play();
+                moveLimit -= 1;
             }
         }
         else
@@ -54,11 +84,22 @@ public class GameManager : MonoBehaviour
             if (swipeDelta.y > 0 && selectedTile.CanMove(Vector2.up))
             {
                 selectedTile.MoveTile(Vector2.up);
+                moveSound.Play();
+                moveLimit -= 1;
             }
             else if (swipeDelta.y < 0 && selectedTile.CanMove(Vector2.down))
             {
                 selectedTile.MoveTile(Vector2.down);
+                moveSound.Play();
+                moveLimit -= 1;
             }
         }
+    }
+
+    void EnableOOM()
+    {
+        movesObject.SetActive(true);
+        dimming.SetActive(true);
+        Time.timeScale = 0f;
     }
 }

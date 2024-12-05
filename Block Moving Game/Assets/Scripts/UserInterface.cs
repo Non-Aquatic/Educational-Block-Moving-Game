@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.SearchService;
+//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -14,10 +14,13 @@ public class UserInterface : MonoBehaviour
 
     public GameObject pausePanel;
     public GameObject dimming;
+    public GameObject holeFiller;
     public Button restartButton;
     public Button levelSelectButton;
     public Button mainMenuButton;
     public Button exitGameButton;
+    public Button retryButton;
+    public Button returnToSelectButton;
     private bool isPaused = false;
 
     // Start is called before the first frame update
@@ -27,8 +30,11 @@ public class UserInterface : MonoBehaviour
 
         pausePanel.SetActive(false);
         dimming.SetActive(false);
+        holeFiller.SetActive(false);
         restartButton.onClick.AddListener(RestartLevel);
+        retryButton.onClick.AddListener(RestartLevel);
         levelSelectButton.onClick.AddListener(ToLevelSelect);
+        returnToSelectButton.onClick.AddListener(ToLevelSelect);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
         exitGameButton.onClick.AddListener(ExitGame);
     }
@@ -53,6 +59,7 @@ public class UserInterface : MonoBehaviour
     {
         pausePanel.SetActive(true);
         dimming.SetActive(true);
+        holeFiller.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -61,12 +68,14 @@ public class UserInterface : MonoBehaviour
     {
         pausePanel.SetActive(false);
         dimming.SetActive(false);
+        holeFiller.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
     }
 
     void RestartLevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(level.text);
     }
 

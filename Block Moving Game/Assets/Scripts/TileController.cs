@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using System.Collections;
 
 public class TileController : MonoBehaviour
 {
@@ -7,18 +9,45 @@ public class TileController : MonoBehaviour
     public Transform checkLeft;
     public Transform checkRight;
 
+    public GameObject arrowUp;
+    public GameObject arrowDown;
+    public GameObject arrowLeft;
+    public GameObject arrowRight;
+
+    // New variable to determine movement direction
+    public bool canMoveVertically = true; // Allow vertical movement by default
+    public bool canMoveHorizontally = false; // Allow horizontal movement by default
+
     public void Start()
     {
         SetCheckPositionsActive(false);
-    }
-    public void MoveTile(Vector2 direction)
-    {
-        Vector3 newPosition = transform.position + (Vector3)direction; 
-        transform.position = newPosition; 
+        DeactivateArrows();
     }
 
+    public void MoveTile(Vector2 direction)
+    {
+        Vector3 newPosition = transform.position + (Vector3)direction;
+        StartCoroutine(SmoothMoveToPosition(newPosition));
+    }
+    private IEnumerator SmoothMoveToPosition(Vector3 targetPosition)
+    {
+        float timeElapsed = 0f;
+        Vector3 startingPosition = transform.position;
+
+        while (timeElapsed < .1)
+        {
+            transform.position = Vector3.Lerp(startingPosition, targetPosition, timeElapsed / .1f);
+            timeElapsed += Time.deltaTime;
+            yield return null; 
+        }
+        transform.position = targetPosition;
+    }
     public bool CanMove(Vector2 direction)
     {
+        // Allow movement checks based on allowed direction
+        if ((direction == Vector2.up || direction == Vector2.down) && !canMoveVertically) return false;
+        if ((direction == Vector2.left || direction == Vector2.right) && !canMoveHorizontally) return false;
+
         Transform checkPosition = null;
         if (direction == Vector2.up) checkPosition = checkUp;
         else if (direction == Vector2.down) checkPosition = checkDown;
@@ -35,13 +64,13 @@ public class TileController : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            if (hit.CompareTag("Tile") && hit.gameObject != gameObject) 
+            if (hit.CompareTag("Tile") && hit.gameObject != gameObject)
             {
-                return false; 
+                return false;
             }
         }
 
-        return true; 
+        return true;
     }
 
     private void SetCheckPositionsActive(bool isActive)
@@ -50,5 +79,21 @@ public class TileController : MonoBehaviour
         checkDown.gameObject.SetActive(isActive);
         checkLeft.gameObject.SetActive(isActive);
         checkRight.gameObject.SetActive(isActive);
+    }
+    public void ActivateArrows()
+    {
+        if (CanMove(Vector2.up)) arrowUp.SetActive(true);
+        if (CanMove(Vector2.down)) arrowDown.SetActive(true);
+        if (CanMove(Vector2.left)) arrowLeft.SetActive(true);
+        if (CanMove(Vector2.right)) arrowRight.SetActive(true);
+    }
+
+    // Method to deactivate all arrows
+    public void DeactivateArrows()
+    {
+        arrowUp.SetActive(false);
+        arrowDown.SetActive(false);
+        arrowLeft.SetActive(false);
+        arrowRight.SetActive(false);
     }
 }
