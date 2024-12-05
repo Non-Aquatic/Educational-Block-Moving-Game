@@ -254,8 +254,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your goal is to restore proper blood flow by getting the healthy red blood
-    cell(s) through all of the sickled blood cells to the yellow goal tile
+  m_text: Your goal is to restore proper blood flow by moving the sickled blood cells
+    out of the way allowing the healthy red blood cell to reach the yellow goal tile.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 23dfcccbe0fac0946909e4a45f7202af, type: 2}
   m_sharedMaterial: {fileID: -4716268996904983531, guid: 23dfcccbe0fac0946909e4a45f7202af, type: 2}
@@ -1582,8 +1582,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5, y: 294.00037}
-  m_SizeDelta: {x: -83, y: -808.00073}
+  m_AnchoredPosition: {x: 0, y: 285.32758}
+  m_SizeDelta: {x: -47.133, y: -790.6552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1036329622
 MonoBehaviour:
