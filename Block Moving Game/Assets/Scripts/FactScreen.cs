@@ -33,7 +33,7 @@ public class FactScreen : MonoBehaviour
         facts[4] = " • In 2023, a new gene therapy called exa-cel was developed by CRISPR Therapeutics and Vertex Pharaceuticals and received regulatory approval in some regions.\n" +
                    " • This therapy uses CRISPR gene-editing technology to modify stem cells and correct the mutation in the patient's bone marrow.\n" +
                    " • This breakthrough offers new hope as a one-time treatment that could potentially cure sickle cell disease.";
-        facts[5] = " • Over time, sickle cell disease can damage organs such as the kidneys, liver, heart, and lungs due to lack of oxygen and blood flow." +
+        facts[5] = " • Over time, sickle cell disease can damage organs such as the kidneys, liver, heart, and lungs due to lack of oxygen and blood flow.\n" +
                    " • It can also lead to complications like acute chest syndrome, strokes, and delayed growth in children if not properly handled.";
 
 
@@ -60,7 +60,6 @@ public class FactScreen : MonoBehaviour
     void SkipToNextScene()
     {
         lastScene = PlayerPrefs.GetString("lastSceneName");
-
         SceneManager.LoadScene("Level Select");
     }
 

@@ -13,6 +13,7 @@ public class LevelSelect : MonoBehaviour
     public Button l4Button;
     public Button l5Button;
     public Button mainMenuButton;
+    public Button quizButton;
 
     public Transform level1Container;
     public Transform level2Container;
@@ -47,7 +48,6 @@ public class LevelSelect : MonoBehaviour
         UpdateStarsForLevel(3, level3Stars);
         UpdateStarsForLevel(4, level4Stars);
         UpdateStarsForLevel(5, level5Stars);
-
     }
     void CheckLevelProgress()
     {
@@ -59,6 +59,7 @@ public class LevelSelect : MonoBehaviour
         l3Button.interactable = (maxLevelCompleted >= 2);
         l4Button.interactable = (maxLevelCompleted >= 3);
         l5Button.interactable = (maxLevelCompleted >= 4);
+        quizButton.interactable = (maxLevelCompleted >= 5);
     }
     void UpdateStarsForLevel(int levelNumber, Image[] stars)
     {
@@ -111,5 +112,9 @@ public class LevelSelect : MonoBehaviour
     public void Tutorial()
     {
         SceneManager.LoadScene("Tutorial");
+    }
+    public void Quiz()
+    {
+        SceneManager.LoadScene("Quiz");
     }
 }
