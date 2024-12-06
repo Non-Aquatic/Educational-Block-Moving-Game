@@ -15,7 +15,7 @@ public class TutorialManager : MonoBehaviour
 
     void Start()
     {
-        tutorialText.text = "Welcome to the game! Your goal is to move the red blood cell here.";
+        tutorialText.text = "Welcome, medical student! Today, I'll guide you through managing a case of sickle cell disease. Your goal is to help the red blood cell.";
         DeactivateAllArrows();
         SetArrow(0);
     }
@@ -50,12 +50,12 @@ public class TutorialManager : MonoBehaviour
         switch (currentStep)
         {
             case 1:
-                tutorialText.text = "All the way to the end of the map to the ending space here";
+                tutorialText.text = "by guiding it from one end of the vein to the other, until it reaches the final space ";
                 SetArrow(1);
                 timer = 7f;
                 break;
             case 2:
-                tutorialText.text = "To move a tile Click and hold on any tile to select it";
+                tutorialText.text = "To move a cell, you first have to click and hold on that cell to select it";
                 SetArrow(0);
                 SetArrow(2);
                 SetArrow(3);
@@ -70,40 +70,40 @@ public class TutorialManager : MonoBehaviour
                 timer = 7f;
                 break;
             case 5:
-                tutorialText.text = "Next look at the top of the screen. The ambulance will arrive every 25 seconds to give you a random medicine/powerup";
+                tutorialText.text = "Next look at the top of the screen. The ambulance will arrive every 25 seconds to give you a random treatment that will help you manage sickle cell disease";
                 SetArrow(4);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 6:
-                tutorialText.text = "In the top right here you can also see the amount of time left and amount of moves you have left";
+                tutorialText.text = "In the top right here you can also see the amount of time left and amount of moves you have left. If they reach zero,you lose";
                 SetArrow(5);
                 timer = 7f;
                 break;
             case 7:
-                tutorialText.text = "Now at the bottom are your powerups which each have a different effect ";
+                tutorialText.text = "Now at the bottom are your treaments, each one has a different effect that can help treat sickle cell disease";
                 timer = 7f;
                 break;
             case 8:
-                tutorialText.text = "Hydroxyurea repairs sickle cells meaning it gets rid of a single random sickle cell";
+                tutorialText.text = "Hydroxyurea is a treatment that repairs sickle cells. It will remove a single random sickle cell from the vein";
                 SetArrow(6);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 9:
-                tutorialText.text = "Penicillin prevents other dieseases caused by sickle cell meaning it increases your time left by 15 seconds";
+                tutorialText.text = "Penicillin helps prevent infections caused by sickle cell disease. It will give you 20 seconds more seconds to guide the red blood cell"; ;
                 SetArrow(7);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 10:
-                tutorialText.text = "Adakveo makes sickle cells less sticky meaning it lets a random sickle cell vertically and horizaontally";
+                tutorialText.text = "Adakveo helps make sickle cells less \"sticky\", allowing them to move more freely. This power-up will let a random sickle cell move vertically and horizontally";
                 SetArrow(8);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 11:
                 tutorialText.text = "If you ever need a refersher for the powerups you can hover over them to see what they do";
                 timer = 7f;
                 break;
             default:
-                tutorialText.text = "To finish the tutorial, move the red blood cell to the end tile!";
+                tutorialText.text = "To finish the tutorial move the healthy red blood cell to the end of the vein to restore blood flow";
                 timer = 7f;
                 break;
         }

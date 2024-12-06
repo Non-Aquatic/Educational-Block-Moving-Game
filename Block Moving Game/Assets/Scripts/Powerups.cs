@@ -93,7 +93,7 @@ public class Powerups : MonoBehaviour
     }
     public void Penicillin()
     {
-        timer.AddTime(15f);
+        timer.AddTime(20f);
         pop.Play();
         penicillinCount--;
         UpdateText();
