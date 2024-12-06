@@ -89,7 +89,7 @@ public class TutorialManager : MonoBehaviour
                 timer = 10f;
                 break;
             case 9:
-                tutorialText.text = "Penicillin helps prevent infections caused by sickle cell disease. It will give you 15 seconds more seconds and 3 more turns to guide the red blood cell"; ;
+                tutorialText.text = "Penicillin helps prevent infections caused by sickle cell disease. It will give you 20 seconds more seconds to guide the red blood cell"; ;
                 SetArrow(7);
                 timer = 10f;
                 break;
