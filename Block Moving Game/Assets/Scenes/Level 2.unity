@@ -820,7 +820,7 @@ MonoBehaviour:
   moveSound: {fileID: 447787120}
   movesObject: {fileID: 1879971679}
   dimming: {fileID: 1879971680}
-  moveLimit: 20
+  moveLimit: 25
   movesText: {fileID: 1879971678}
 --- !u!4 &447787122
 Transform:
