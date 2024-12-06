@@ -18,18 +18,21 @@ public class FactScreen : MonoBehaviour
     {
         skipButton.onClick.AddListener(SkipToNextScene);
 
-        facts[0] = "Sickle cell disease is a genetic blood disorder that is caused by a mutation in the HBB gene. This gene instructs the body on how to make hemoglobin which is " +
-                   "the protein in red blood cells that caries oxygen. This mutation causes red blood cells to form a rigid, sickle-like shape that can cause various issues.";
-        facts[1] = "Sickled red blood cells are less flexible than regular red blood cells and are more likely to block small blood vessels. This causes severe pain in episodes known as \"sickle cell crises.\"" +
-                   " Other complications include increased risk of infections, organ damage, and anemia.";
-        facts[2] = "Sickle cell disease is particularly common among people of African descent. It is estimated to affect about 100,000 Americans and " +
-                   "8 million worldwide, especially in regions where malaria is or was common. People with the sickle cell mutation are partially protected from malaria.";
-        facts[3] = "Traditional treatments focus on managing symptoms, such as pain relief, and include blood transfusions, and medications like hydroxyurea. Bone marrow transplants offer a potential cure but " +
-                   "are not accessible or safe for everyone due to because a compatible donor is needed." +
-                   "The donor’s human leukocyte antigens (HLAs) must closely match those of the patient to reduce the risk of rejection, which if happens could lead to further complications.";
-        facts[4] = "In 2023, a new gene therapy called exa-cel was developed by CRISPR Therapeutics and Vertex Pharaceuticals and received regulatory approval in some regions. This therapy uses CRISPR" +
-                   " gene-editing technology to modify stem cells and correct the mutation in the patient's bone marrow which allows the patient's own body to produce normal hemoglobin. This" +
-                   " breakthrough offers new hope as a one-time treatment that could potentially cure sickle cell disease.";
+        facts[0] = " • Sickle cell disease is a genetic blood disorder that is caused by a mutation in the HBB gene. \n" +
+                   " • This gene instructs the body on how to make hemoglobin which is the protein in red blood cells that carries oxygen. \n" +
+                   " • This mutation causes red blood cells to form a rigid, sickle-like shape that can cause various complications.";
+        facts[1] = " • Sickled red blood cells are less flexible, which can can lead to small blood vessels becoming blocked.\n\n" +
+                   " • This causes severe pain in episodes known as \"sickle cell crises.\"\n\n" +
+                   " • Other complications include increased risk of infections, organ damage, and anemia.";
+        facts[2] = " • Sickle cell disease is particularly common among people of African descent.\n\n" +
+                   " • It is estimated to affect about 100,000 Americans and 8 million worldwide.\n\n" +
+                   " • It is especially common in areas where malaria is or was previously common.";
+        facts[3] = " • Traditional treatments focus on managing symptoms through methods such as pain relief, blood transfusions, and medications like hydroxyurea.\n\n" +
+                   " • Bone marrow transplants offer a potential cure but are not accessible or safe for everyone due to matching and health constraints.";
+        facts[4] = " • In 2023, a new gene therapy called exa-cel was developed by CRISPR Therapeutics and Vertex Pharaceuticals and received regulatory approval in some regions.\n" +
+                   " • This therapy uses CRISPR gene-editing technology to modify stem cells and correct the mutation in the patient's bone marrow.\n" +
+                   " • This breakthrough offers new hope as a one-time treatment that could potentially cure sickle cell disease.";
+        
         factIndex = Random.Range(1, facts.Length);
         lastScene = PlayerPrefs.GetString("lastSceneName");
         factText.fontSize = 35;
@@ -37,11 +40,6 @@ public class FactScreen : MonoBehaviour
         if (lastScene == "Main Menu")
         {
             factIndex = 0;
-        }
-
-        if(factIndex == 4)
-        {
-            factText.fontSize = 30;
         }
         
         factText.text = facts[factIndex];
