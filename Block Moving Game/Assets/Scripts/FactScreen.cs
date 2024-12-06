@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class FactScreen : MonoBehaviour
 {
     public Button skipButton;
-    private string[] facts = new string[5];
+    private string[] facts = new string[6];
     public TMP_Text factText;
     private int factIndex;
     string lastScene = "";
@@ -33,14 +33,24 @@ public class FactScreen : MonoBehaviour
         facts[4] = " • In 2023, a new gene therapy called exa-cel was developed by CRISPR Therapeutics and Vertex Pharaceuticals and received regulatory approval in some regions.\n" +
                    " • This therapy uses CRISPR gene-editing technology to modify stem cells and correct the mutation in the patient's bone marrow.\n" +
                    " • This breakthrough offers new hope as a one-time treatment that could potentially cure sickle cell disease.";
-        
-        factIndex = Random.Range(1, facts.Length);
+        facts[5] = " • Over time, sickle cell disease can damage organs such as the kidneys, liver, heart, and lungs due to lack of oxygen and blood flow." +
+                   " • It can also lead to complications like acute chest syndrome, strokes, and delayed growth in children if not properly handled.";
+
+
+        factIndex = (factIndex + 1) % facts.Length;
         lastScene = PlayerPrefs.GetString("lastSceneName");
+        int levelNumber = 0;
+        if (lastScene.StartsWith("Level"))
+        {
+            int.TryParse(lastScene.Substring(6), out levelNumber);
+        }
+        factIndex = levelNumber;
         factText.fontSize = 35;
 
-        if (lastScene == "Main Menu")
+        if (lastScene == "Main Menu" || lastScene == "Tutorial")
+           
         {
-            factIndex = 3;
+            factIndex = 0;
         }
         
         factText.text = facts[factIndex];
