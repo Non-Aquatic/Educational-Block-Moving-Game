@@ -27,8 +27,9 @@ public class FactScreen : MonoBehaviour
         facts[2] = " • Sickle cell disease is particularly common among people of African descent.\n\n" +
                    " • It is estimated to affect about 100,000 Americans and 8 million worldwide.\n\n" +
                    " • It is especially common in areas where malaria is or was previously common.";
-        facts[3] = " • Traditional treatments focus on managing symptoms through methods such as pain relief, blood transfusions, and medications like hydroxyurea.\n\n" +
-                   " • Bone marrow transplants offer a potential cure but are not accessible or safe for everyone due to matching and health constraints.";
+        facts[3] = " • Traditional treatments, such as blood transfusions and medications like hydroxyurea, focus on managing symptoms, including pain relief and anemia.\n" +
+                   " • Bone marrow transplants offer a potential cure for sickle cell disease, but success depends on finding a donor with matching human leukocyte antigen (HLA) markers.\n" +
+                   " • If these markers don’t match, the body may reject the transplant or attack the new cells, leading to serious complications like graft-versus-host disease.";
         facts[4] = " • In 2023, a new gene therapy called exa-cel was developed by CRISPR Therapeutics and Vertex Pharaceuticals and received regulatory approval in some regions.\n" +
                    " • This therapy uses CRISPR gene-editing technology to modify stem cells and correct the mutation in the patient's bone marrow.\n" +
                    " • This breakthrough offers new hope as a one-time treatment that could potentially cure sickle cell disease.";
@@ -39,7 +40,7 @@ public class FactScreen : MonoBehaviour
 
         if (lastScene == "Main Menu")
         {
-            factIndex = 0;
+            factIndex = 3;
         }
         
         factText.text = facts[factIndex];

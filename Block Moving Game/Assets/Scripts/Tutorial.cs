@@ -50,12 +50,12 @@ public class TutorialManager : MonoBehaviour
         switch (currentStep)
         {
             case 1:
-                tutorialText.text = "by guiding it all the way to the end of the map to the final space, in order to restore blood flow.";
+                tutorialText.text = "by guiding it from one end of the vein to the other, until it reaches the final space ";
                 SetArrow(1);
                 timer = 7f;
                 break;
             case 2:
-                tutorialText.text = "To move a tile Click and hold on any tile to select it, This will allow you to move cells and clear the way for the red blood cell";
+                tutorialText.text = "To move a cell, you first have to click and hold on that cell to select it";
                 SetArrow(0);
                 SetArrow(2);
                 SetArrow(3);
@@ -72,31 +72,31 @@ public class TutorialManager : MonoBehaviour
             case 5:
                 tutorialText.text = "Next look at the top of the screen. The ambulance will arrive every 25 seconds to give you a random treatment that will help you manage sickle cell disease";
                 SetArrow(4);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 6:
-                tutorialText.text = "In the top right here you can also see the amount of time left and amount of moves you have left. Manage these carefully because if they run out it's game over";
+                tutorialText.text = "In the top right here you can also see the amount of time left and amount of moves you have left. If they reach zero,you lose";
                 SetArrow(5);
                 timer = 7f;
                 break;
             case 7:
-                tutorialText.text = "Now at the bottom are your treaments which, each one has a different effect that can help treat sickle cell disease";
+                tutorialText.text = "Now at the bottom are your treaments, each one has a different effect that can help treat sickle cell disease";
                 timer = 7f;
                 break;
             case 8:
-                tutorialText.text = "Hydroxyurea is a treatment that repairs sickle cells. It will remove a single random sickle cell from the path, helping restore normal blood flow.";
+                tutorialText.text = "Hydroxyurea is a treatment that repairs sickle cells. It will remove a single random sickle cell from the vein";
                 SetArrow(6);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 9:
-                tutorialText.text = "Penicillin helps prevent infections caused by sickle cell disease. It will give you 15 seconds more seconds, giving you more time to guide the red blood cell past the sickle cells"; ;
+                tutorialText.text = "Penicillin helps prevent infections caused by sickle cell disease. It will give you 15 seconds more seconds and 3 more turns to guide the red blood cell"; ;
                 SetArrow(7);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 10:
                 tutorialText.text = "Adakveo helps make sickle cells less \"sticky\", allowing them to move more freely. This power-up will let a random sickle cell move vertically and horizontally";
                 SetArrow(8);
-                timer = 7f;
+                timer = 10f;
                 break;
             case 11:
                 tutorialText.text = "If you ever need a refersher for the powerups you can hover over them to see what they do";
